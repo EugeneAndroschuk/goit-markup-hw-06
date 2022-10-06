@@ -78,6 +78,38 @@
                 <use href="./images/icons.svg#icon-close"></use>
               </svg>
             </div>
+            <form class="form">
+              <h1 class="form-title">Залиште свої дані, ми вам передзвонимо</h1>
+
+              <label for="name" class="form-label">Ім'я</label>
+              <div class="group-name">
+              <input type="text" name="name" id="name" class="form-field" />
+              <svg class="name-icon" width="12" height="12">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+              </div>
+
+              <label for="tel" class="form-label">Телефон</label>
+              <input type="tel" name="tel" id="tel" class="form-field" />
+
+              <label for="mail" class="form-label">Пошта</label>
+              <input type="imail" name="mail" id="mail" class="form-field" />
+
+              <label for="comments" class="form-label">Коментар</label>
+              <textarea
+                name="comments"
+                id="comments"
+                cols="30"
+                rows="10"
+                placeholder="Введіть текст"
+                class="form-field"
+              ></textarea>
+              <input type="checkbox" name="licence" id="license" />
+              <label for="licence"
+                >Погоджуюся з розсилкою та приймаю Умови договору</label
+              >
+              <button type="submit" class="btn-submit-modal">Відправити</button>
+            </form>
           </div>
         </div>
         <!------------------>
@@ -475,6 +507,24 @@
               </a>
             </li>
           </ul>
+        </div>
+
+        <div>
+          <h2 class="footer-form-title">Підпишіться на розсилку</h2>
+          <form class="footer-form">
+            <input
+              type="email"
+              name="mail"
+              placeholder="E-mail"
+              class="footer-input"
+            />
+            <button type="submit" class="btn-submit-modal">
+              Підписатися
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
